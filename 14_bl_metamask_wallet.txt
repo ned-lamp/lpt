@@ -1,0 +1,72 @@
+14 - Create Your Own Wallet Using MetaMask for Crypto Transactions
+==================================================================
+
+Aim: Create your own wallet using MetaMask for crypto transactions.
+
+KEY TERMS
+---------
+Crypto wallet   : software that stores your keys and lets you send/receive crypto.
+Public key /
+Address         : like your account number (0x...); safe to share to receive ETH.
+Private key     : like your password/PIN; signs transactions. NEVER share it.
+Recovery phrase : 12 words that can restore the whole wallet on any device.
+Hot wallet      : connected to the internet (MetaMask) - easy to use.
+Cold wallet     : offline hardware device (Ledger) - more secure.
+Custodial       : a company holds your keys (exchange like WazirX/Binance).
+Non-custodial   : you hold your own keys (MetaMask).
+Transaction hash: unique ID of a transaction, used to track it on Etherscan.
+
+STEPS - CREATE WALLET
+---------------------
+1. Install MetaMask extension in Chrome (https://metamask.io) and pin it.
+2. Click "Create a new wallet" -> set a password.
+3. Write down the 12-word Secret Recovery Phrase -> confirm it.
+4. Wallet created: "Account 1" with a public address (0x...).
+5. Create another account: account menu -> "Add account" -> name it "Account 2".
+6. (Optional) View private key: account menu -> Account details ->
+   "Show private key" -> enter password. Only observe, never share.
+
+STEPS - GET TEST ETHER
+----------------------
+7. Network dropdown -> enable "Show test networks" -> choose "Sepolia".
+8. Copy Account 1 address -> open a Sepolia faucet -> paste and request ETH.
+
+STEPS - CRYPTO TRANSACTIONS
+---------------------------
+Send:
+9.  In Account 1 click "Send" -> choose Account 2 / paste an address.
+10. Enter amount (e.g. 0.02 ETH) -> Next -> check gas fee -> Confirm.
+Receive:
+11. Switch to Account 2 -> balance shows the received 0.02 ETH.
+12. Click "Receive" (or copy address / QR code) to share your address with others.
+Track:
+13. Activity tab -> click the transaction -> "View on block explorer".
+14. On Etherscan note: Transaction hash, Status (Success), Block number,
+    From, To, Value, Transaction fee.
+Import (optional):
+15. Import an account using a private key: account menu -> "Import account".
+16. Import a token: Tokens -> "Import tokens" -> paste token contract address.
+
+OBSERVATION (fill in your journal)
+----------------------------------
+Account 1 address : 0x....
+Account 2 address : 0x....
+Amount sent       :
+Transaction hash  :
+Gas fee           :
+Balance before / after (Account 1) :
+Balance before / after (Account 2) :
+
+CONCLUSION
+----------
+A personal non-custodial wallet was created using MetaMask, test Ether was
+obtained from a faucet, and Ether was sent and received between accounts.
+Each transaction was verified on the Etherscan block explorer.
+
+VIVA QUESTIONS
+--------------
+- Public vs private key?      -> Public = address to receive; private = signs, keep secret.
+- Hot vs cold wallet?         -> Online vs offline storage.
+- What if recovery phrase is lost? -> Wallet cannot be recovered.
+- What is a block explorer?   -> Website (Etherscan) to view blockchain transactions.
+- Is MetaMask custodial?      -> No, it is non-custodial (you hold the keys).

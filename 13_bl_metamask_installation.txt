@@ -1,0 +1,79 @@
+13 - Installation of MetaMask and Study Spending Ether per Transaction
+=====================================================================
+
+Aim: Installation of MetaMask and study spending Ether per transaction.
+
+KEY TERMS
+---------
+MetaMask        : a crypto wallet as a browser extension; lets you hold Ether and
+                  connect to Ethereum apps (like Remix).
+Wallet          : stores your private keys and shows your balance (the coins
+                  are on the blockchain, not in the wallet).
+Ethereum        : a blockchain that supports smart contracts; its coin is Ether (ETH).
+Transaction     : sending Ether or calling a smart contract; recorded on the blockchain.
+Gas             : units of work a transaction needs (a simple ETH transfer = 21,000 gas).
+Gas price       : price per gas unit, in Gwei (1 Gwei = 10^-9 ETH).
+Transaction fee : Gas used x Gas price  (this is the Ether "spent" per transaction).
+Base fee        : minimum fee set by the network (burned).
+Priority fee    : tip to the validator to process your transaction faster.
+Test network    : (Sepolia) a practice Ethereum network with free fake Ether.
+Faucet          : a website that gives free test Ether.
+
+STEPS - INSTALLATION
+--------------------
+1. Open Chrome and go to https://metamask.io -> click "Download".
+2. Click "Add to Chrome" -> "Add extension".
+3. Pin the MetaMask fox icon from the extensions (puzzle) menu.
+4. Open MetaMask -> click "Create a new wallet" -> agree to terms.
+5. Set a password (used to unlock MetaMask on this computer).
+6. Secure your wallet: write down the 12-word Secret Recovery Phrase on paper.
+   Never share it with anyone. Confirm the words when asked.
+7. Wallet is ready - you will see "Account 1" with 0 ETH and an address (0x...).
+
+STEPS - GET TEST ETHER
+----------------------
+8. Click the network dropdown (top-left) -> turn ON "Show test networks".
+9. Select "Sepolia" test network.
+10. Copy your account address (click on the account name).
+11. Open a Sepolia faucet (search "Sepolia faucet", e.g. Google Cloud / Alchemy),
+    paste the address and request test ETH. Wait a minute, balance updates.
+
+STEPS - STUDY SPENDING ETHER PER TRANSACTION
+--------------------------------------------
+12. In MetaMask create a second account: account menu -> "Add account".
+13. Switch back to Account 1 -> click "Send".
+14. Select Account 2 (or paste its address) -> enter amount, e.g. 0.01 ETH -> Next.
+15. Before confirming, note the fee screen:
+      - Estimated gas fee
+      - Max fee
+      - Total = amount + gas fee
+    Click "Edit" / "Market" to see Low / Market / Aggressive fee options.
+16. Click "Confirm". Status goes Pending -> Confirmed.
+17. Open the transaction in the Activity tab -> "View on block explorer" (Etherscan).
+    Note: Transaction Hash, Block, From, To, Value, Gas Limit, Gas Used,
+          Gas Price, Transaction Fee.
+18. Check: Account 1 balance decreased by (amount + fee); Account 2 increased
+    by amount only. The difference = Ether spent on the transaction.
+19. Repeat with a different fee option (Low / Aggressive) and compare the fee
+    and confirmation time.
+
+OBSERVATION TABLE (fill in your journal)
+----------------------------------------
+| Txn | Amount sent | Gas used | Gas price (Gwei) | Fee (ETH) | Time |
+|-----|-------------|----------|------------------|-----------|------|
+|  1  |  0.01 ETH   |  21000   |                  |           |      |
+|  2  |             |          |                  |           |      |
+
+CONCLUSION
+----------
+MetaMask was installed and a wallet was created. Ether spent per transaction
+equals gas used x gas price; a simple transfer uses 21,000 gas, and a higher
+gas price gives faster confirmation but costs more.
+
+VIVA QUESTIONS
+--------------
+- What is MetaMask?            -> Browser wallet to store ETH and use dApps.
+- What is a Secret Recovery Phrase? -> 12 words that can restore your wallet.
+- Why gas fee?                 -> Pays validators for processing and prevents spam.
+- Gas used for a simple transfer? -> 21,000.
+- Gwei vs Wei?                 -> 1 ETH = 10^9 Gwei = 10^18 Wei.

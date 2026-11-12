@@ -1,0 +1,90 @@
+17 - Survey Report on Types of Blockchain and Its Real-Time Use Cases
+====================================================================
+
+Aim: Write a survey report on types of Blockchain and its real time use cases.
+
+WHAT TO DO
+----------
+This is a written report (no code). Write it in your journal using the
+structure below: Introduction -> Types -> Comparison -> Use cases -> Conclusion.
+
+1. INTRODUCTION
+---------------
+Blockchain  : a shared, distributed digital ledger where data is stored in
+              blocks linked together using cryptographic hashes.
+Block       : contains data (transactions), its own hash and the previous block's hash.
+Decentralized : no single owner; many computers (nodes) keep a copy.
+Immutable   : once recorded, data cannot be changed (changing one block breaks the chain).
+Consensus   : the method nodes use to agree on the valid chain
+              (Proof of Work, Proof of Stake, PBFT etc.).
+
+2. TYPES OF BLOCKCHAIN
+----------------------
+a) Public Blockchain (Permissionless)
+   - Anyone can join, read, write and validate.
+   - Fully decentralized and transparent.
+   - Examples: Bitcoin, Ethereum.
+   - Advantages   : transparent, secure, no central control, trustless.
+   - Disadvantages: slow, high energy use (PoW), high fees, less privacy.
+
+b) Private Blockchain (Permissioned)
+   - Controlled by one organization; only invited members can join.
+   - Examples: Hyperledger Fabric, R3 Corda (single-company setups).
+   - Advantages   : fast, private, low cost, easy to control.
+   - Disadvantages: centralized, less trust, single point of failure.
+
+c) Consortium / Federated Blockchain
+   - Controlled by a group of organizations together.
+   - Examples: R3 (banks), Energy Web Foundation, IBM Food Trust.
+   - Advantages   : faster than public, shared control, more secure than private.
+   - Disadvantages: needs cooperation between members, less transparent.
+
+d) Hybrid Blockchain
+   - Mix of public and private: some data private, some public/verifiable.
+   - Example: XinFin (XDC), Dragonchain.
+   - Advantages   : flexible, privacy + transparency where needed.
+   - Disadvantages: complex to set up, not fully transparent.
+
+3. COMPARISON TABLE
+-------------------
+| Feature      | Public       | Private      | Consortium     | Hybrid        |
+|--------------|--------------|--------------|----------------|---------------|
+| Access       | Anyone       | One org      | Group of orgs  | Mixed         |
+| Control      | Decentralized| Centralized  | Semi-central   | Mixed         |
+| Speed        | Slow         | Fast         | Fast           | Medium-Fast   |
+| Privacy      | Low          | High         | High           | Configurable  |
+| Example      | Bitcoin, ETH | Hyperledger  | R3 Corda       | XinFin        |
+
+4. REAL-TIME USE CASES
+----------------------
+1. Cryptocurrency & payments : Bitcoin, Ethereum; fast cross-border payments (Ripple).
+2. Banking & finance         : trade finance, KYC sharing between banks, DeFi lending.
+3. Supply chain              : tracking products from farm to shop
+                               (Walmart + IBM Food Trust tracks food origin in seconds).
+4. Healthcare                : secure sharing of patient records, tracking medicines
+                               to stop fake drugs.
+5. Voting                    : tamper-proof, transparent digital voting.
+6. Land & property records   : fraud-free ownership records (pilots in Andhra
+                               Pradesh, Maharashtra).
+7. Education                 : verifiable digital certificates and degrees.
+8. NFTs & digital ownership  : proof of ownership for art, music, game items.
+9. Insurance                 : smart contracts that auto-pay claims (e.g. flight delay).
+10. Government (India)       : RBI's e-Rupee (CBDC) pilot uses blockchain-like
+                               technology; Indian Blockchain Strategy by MeitY.
+
+5. CONCLUSION
+-------------
+Blockchain provides a secure, transparent and tamper-proof way to store data
+without a central authority. Public blockchains suit open systems like
+cryptocurrency, while private, consortium and hybrid blockchains suit businesses
+that need speed and privacy. Its use is growing in finance, supply chain,
+healthcare and government.
+
+VIVA QUESTIONS
+--------------
+- Types of blockchain?        -> Public, Private, Consortium, Hybrid.
+- Permissioned vs permissionless? -> Invite-only vs anyone can join.
+- Advantages of public blockchain? -> Transparent, secure, decentralized.
+- Disadvantages of public blockchain? -> Slow, costly fees, high energy, low privacy.
+- What makes blockchain immutable? -> Each block stores the previous block's hash.
+- PoW vs PoS?                 -> Mining with computing power vs validating by staking coins.
