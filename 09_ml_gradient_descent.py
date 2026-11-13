@@ -16,8 +16,11 @@ Key terms:
   Gradient descent : move step by step opposite to the slope (downhill) to reach the minimum.
   Learning rate    : step size. Too big -> overshoots/never converges; too small -> very slow.
   Convergence      : stopping when the slope is almost 0.
-  Local minima     : lowest point in a nearby region.
-  Global minima    : lowest point overall (here local = global, only one minimum).
+  Local minima     : lowest point in a nearby region (like a small valley).
+  Global minima    : lowest point of the whole function.
+                     Gradient descent can get stuck in a local minima; y = (x+3)^2 has
+                     only one minimum, so here local = global.
+  First steps (lr = 0.1): x = 2 -> grad 10 -> x = 1 -> grad 8 -> x = 0.2 -> ... -> -3
   Use in ML        : minimizing the loss function to find model weights.
   Types            : Batch, Stochastic (SGD), Mini-batch.
 """

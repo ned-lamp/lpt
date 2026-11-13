@@ -23,6 +23,16 @@ Key terms:
   Haversine         : formula for distance between two lat/long points on Earth.
   R2 score          : how much of the fare variation the model explains (closer to 1 = better).
   RMSE              : average size of prediction error (lower = better).
+
+Formulas:  (y = actual, y^ = predicted, y_bar = mean)
+  Correlation (r) = sum((x - x_bar)(y - y_bar)) / sqrt( sum((x - x_bar)^2) * sum((y - y_bar)^2) )
+                    +1 = rise together, -1 = one rises other falls, 0 = no relation
+  Linear Reg.     : y^ = b0 + b1*x1 + b2*x2 + ...   (b = coefficients learned from data)
+  Random Forest   : y^ = average of predictions of all trees
+                    (each tree trained on a random sample of rows/features -> less overfitting)
+  R2              = 1 - sum((y - y^)^2) / sum((y - y_bar)^2)     (1 = perfect, 0 = just guessing mean)
+  RMSE            = sqrt( (1/n) * sum((y - y^)^2) )              (same unit as fare)
+  IQR             = Q3 - Q1 ; outlier if value < Q1 - 1.5*IQR or > Q3 + 1.5*IQR
 """
 
 import pandas as pd

@@ -23,6 +23,15 @@ Key terms:
   n_init            : runs K-Means several times with different starts, keeps best.
   Hierarchical      : alternative; no K needed upfront, builds a tree (dendrogram)
                       by merging closest clusters.
+  Agglomerative     : bottom-up hierarchical; start with every point as its own cluster,
+                      keep merging the 2 closest clusters until one is left.
+  Dendrogram        : tree diagram of the merges; cut it at a height to get the clusters.
+  Distance (Euclid) = sqrt((x1 - x2)^2 + (y1 - y2)^2 + ...)
+  Centroid update   = mean of all points in the cluster
+
+K-Means vs Hierarchical:
+  K-Means      : faster, needs K upfront (elbow method), good for large data.
+  Hierarchical : slower (O(n^2) or more), no K needed, gives a dendrogram.
 """
 
 import pandas as pd

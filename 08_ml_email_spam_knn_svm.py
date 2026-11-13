@@ -24,6 +24,20 @@ Key terms:
   Accuracy  = (TP + TN) / Total
   Precision = TP / (TP + FP)   -> of predicted spam, how many are really spam
   Recall    = TP / (TP + FN)   -> of real spam, how many were caught
+  F1 score  = 2 * Precision * Recall / (Precision + Recall)
+
+Formulas:
+  KNN distance (Euclidean) = sqrt((x1 - x2)^2 + (y1 - y2)^2 + ...)
+  KNN steps : choose K -> find distance to all training emails -> take K nearest
+              -> majority vote = class
+  SVM hyperplane : w . x + b = 0      (w = weights, b = bias)
+  SVM margin     = 2 / ||w||          (SVM maximizes this gap)
+  SVM decision   : w . x + b >= 0 -> Spam, else Not Spam
+
+KNN vs SVM:
+  KNN : simple, no training, slow prediction, sensitive to scaling and K.
+  SVM : slower training, fast prediction, usually more accurate on high-dimension
+        data like word counts.
 """
 
 import pandas as pd

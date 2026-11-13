@@ -12,8 +12,15 @@ Complexity:
   Prediction : O(n x f)     -> distance to all n training points with f features
   Space      : O(n x f)     -> keeps the whole training set
 
+KNN steps:
+  1. Choose K (odd number, e.g. 5).
+  2. Find distance from the new patient to every training patient.
+  3. Take the K closest patients.
+  4. Majority vote of their Outcome = prediction.
+
 Key terms:
   KNN                : finds K nearest points and takes a majority vote.
+  Lazy learner       : no training phase, it just stores the data.
   Euclidean distance : sqrt((x1-x2)^2 + (y1-y2)^2 + ...)
   K                  : number of neighbours; small K = noisy, large K = too smooth; use odd K.
   Non-parametric     : makes no assumption about the shape of the data.
